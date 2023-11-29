@@ -1,0 +1,36 @@
+<header>
+    <h1>Centro medico Backend</h1>
+</header>
+<main>
+    <h2>Listado citas</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>fecha cita</th>
+                <th>Paciente</th>
+                <th>telefono paciente</th>
+                <th>especialidad</th>
+                <th>consultorio</th>
+                <th>medico</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Se agrega el contenido dinamicamente por de medio de handlebars -->
+            {{#each resultado}}
+            <tr>
+                <td>{{ formatoFecha fecha_cita}}</td>
+                <td>{{nombres}} {{apellidos}}</td>
+                <td>{{telefono}}</td>
+                <td>{{especialidad}}</td>
+                <td>{{consultorio}}</td>
+                <td>{{nombresMedico}} {{apellidosMedico}}</td>
+            </tr>
+            {{/each}}
+        </tbody>
+    </table>
+    <a href="../index.html"><input type="button" value="volver"</a>
+</main>
+<footer>
+    <h2>Realizado por: Stiven Serrato</h2>
+    <p>Grupo 1 desarrollo web backend</p>
+</footer>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consulta Especialidades</title>
+    <link rel="stylesheet" href="stylesheets/style.css">
+</head>
+<body>
+  <header>
+    <h1>Medicarte bogota</h1><br><br>
+  </header>  
+   <h3>Consulta de Citas Medicas</h3>
+     <form method="post" action="/consulta-cita">
+       <label for="especialidad"><br>Especialidad Requerida</label>
+    <select id="Especialidad" name="Especialidad">
+      <option value="">---------------- Seleccione Especialidad------------</option>
+      <option value="Medicina General">Medicina General</option>
+      <option value="Cardiologia">Cardiologia</option>
+      <option value="Medicina Interna">Medicina Interna</option>
+      <option value="Dermatologia">Dermatologia</option>
+      <option value="Rehabilitacion Fisica">Rehabilitacion Fisica</option>
+      <option value="psicologia">psicologia</option>
+      <option value="Odontologia">Odontologia</option>
+      <option value="Radiologia">Radiologia</option>
+    </select>
+    <input type="submit" value="Consultar">
+  </form>
+  <div class="boton-container"><br>
+    <a href="index.html"><input type="button" value="INICIO"></a>
+  </div>
+</body>
+</html>

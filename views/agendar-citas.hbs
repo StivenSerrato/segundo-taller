@@ -1,0 +1,20 @@
+<header>
+    <h1>Medicarte bogota</h1><br><br>
+  </header>  
+<h3>Agendamiento de citas</h3>
+  <form method="post" action="/agregar-cita">
+    <label fon="Cedula"><br>Cedula</label>
+    <input type="number" placeholder="numero de cedula" id="Cedula" name="Cedula" required><br><br>
+    <label for="fecha_cita"><br> Fecha de cita medica </label>
+    <input type="number" placeholder="fecha_cita" id="fecha_cita" name="fecha_cita"><br><br>
+    <label for="medico"><br>especialista</label>
+    <select id="medico" name="medico">
+      <option value="">---------------- Seleccione Especialidad------------</option>
+      {{#each resultado}}
+        <option value="{{cedula}}">{{nombres}} {{apellidos}}</option>
+      {{/each}}
+    </select>
+    <input type="submit" value="ENVIAR">
+  </form>
+  <div class="boton-container"><br>
+    <a href="../index.html"><input type="button" value="INICIO"></a>

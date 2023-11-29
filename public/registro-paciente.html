@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registros Pacientes</title>
+    <link rel="stylesheet" href="stylesheets/style.css">
+</head>
+<body>
+  <header>
+    <h1>Medicarte bogota</h1><br><br>
+  </header>  
+<h3>Registro Pacientes</h3>
+  <form id="registro-paciente-form" method="post" action="/agregar-paciente">
+    <label for="nombres"><br>Nombres</label>
+    <input type="text" placeholder="ingrese nombre" id="Nombres" name="Nombres" required><br><br>
+    <label for="apellidos"><br>Apellidos</label>
+    <input type="text" placeholder="ingrese Apellido" id="Apellidos" name="Apellidos" required><br><br>
+    <label fon="cedula"><br>Cedula</label>
+    <input type="number" placeholder="numero de cedula" id="Cedula" name="Cedula" required><br><br>
+    <label for="fecha_nacimiento"><br>Fecha de nacimiento:</label>
+    <input type="date" placeholder="fecha_nacimiento" id="fecha_nacimiento" name="fecha_nacimiento"><br><br>
+    <label for="telefono"><br>Telefono</label>
+    <input type="number" placeholder="Telefono" id="Telefono" name="Telefono"><br><br>
+    <input type="submit" value="ENVIAR">
+  </form>
+  <div class="boton-container"><br>
+    <a href="index.html"><input type="button" value="INICIO"></a>
+  </div>
+</body>
+</html>

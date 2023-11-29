@@ -1,0 +1,38 @@
+<header>
+    <h1>Centro medico Backend</h1>
+</header>
+<main>
+    <h2>Listado Medicos</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>nombres</th>
+                <th>apellidos</th>
+                <th>numero de cedula</th>
+                <th>Consultorio</th>
+                <th>telefono</th>
+                <th>correo</th>
+                <th>especialidad</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Se agrega el contenido dinamicamente por de medio de handlebars -->
+            {{#each resultado}}
+            <tr>
+                <td>{{nombres}}</td>
+                <td>{{apellidos}}</td>
+                <td>{{cedula}}</td>
+                <td>{{consultorio}}</td>
+                <td>{{telefono}}</td>
+                <td>{{correo}}</td>
+                <td>{{especialidad}}</td>
+            </tr>
+            {{/each}}
+        </tbody>
+    </table>
+    <a href="../index.html"><input type="button" value="volver"</a>
+</main>
+<footer>
+    <h2>Realizado por: Stiven Serrato</h2>
+    <p>Grupo 1 desarrollo web backend</p>
+</footer>

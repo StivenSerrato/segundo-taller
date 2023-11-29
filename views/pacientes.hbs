@@ -1,0 +1,29 @@
+<header>
+        <h1>Medicarte Bogota</h1><br><br>
+    </header>
+    <h3>Listados Medicos</h3>
+    <table border="solid">
+        <thead>
+          <tr>
+                 <th>Nombres</th>
+                 <th>Apellidos</th>
+                 <th>Numero de Cedula</th>
+                 <th>Fecha de Nacimiento</th>
+                 <th>Telefono</th>
+        </tr>
+        </thead>
+        <tbody id="cuerpo-tabla-pacientes">
+        {{#each resultado}}
+          <tr>
+             <td>{{nombres}}</td>
+             <td>{{apellidos}}</td>
+             <td>{{cedula}}/td>
+             <td>{{formatofecha fecha_nacimiento}}</td>
+             <td>{{telefono}}</td>
+         </tr>
+        {{/each}}
+        </tbody>
+    </table><br><br>
+    <div>
+        <a href="index.html"><input type="button" value="INICIO"></a>
+    </div>
